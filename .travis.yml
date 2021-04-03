@@ -1,14 +1,14 @@
 sudo: true
+language: node
+os: linux
 dist: trusty
 
 jobs:
   include:
     - stage: build docker image
       script:
-      - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-      - docker build -t stable .
-      - docker images
-      - docker tag stable $DOCKER_USERNAME/stable
-      - docker push $DOCKER_USERNAME/stable
-
-
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - docker build -t stable .
+        - docker images
+        - docker tag stable $DOCKER_USERNAME/stable
+        - docker push $DOCKER_USERNAME/stable
