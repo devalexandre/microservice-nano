@@ -10,3 +10,5 @@ jobs:
       - docker images
       - docker tag stable $DOCKER_USERNAME/stable
       - docker push $DOCKER_USERNAME/stable
+
+
