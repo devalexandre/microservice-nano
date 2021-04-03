@@ -10,5 +10,5 @@ jobs:
         - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
         - docker build -t microservice-nano .
         - docker images
-        - docker tag stable $DOCKER_USERNAME/microservice-nano
+        - docker tag microservice-nano $DOCKER_USERNAME/microservice-nano
         - docker push $DOCKER_USERNAME/microservice-nano
