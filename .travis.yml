@@ -8,7 +8,7 @@ jobs:
     - stage: build docker image
       script:
         - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-        - docker build -t stable .
+        - docker build -t alephp/microservice-nano .
         - docker images
-        - docker tag stable $DOCKER_USERNAME/stable
-        - docker push $DOCKER_USERNAME/stable
+        - docker tag stable $DOCKER_USERNAME/microservice-nano
+        - docker push $DOCKER_USERNAME/microservice-nano
