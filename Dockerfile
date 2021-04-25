@@ -10,4 +10,5 @@ RUN apk add --no-cache git
 COPY docker-entrypoint.sh /home/node/app/docker-entrypoint.sh
 
 # Start server
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["./docker-entrypoint.sh"]
+CMD ["sh"]
