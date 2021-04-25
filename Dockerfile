@@ -1,16 +1,13 @@
 FROM node:lts-alpine
 
-RUN mkdir -p /home/node/app/node_modules
-
+RUN mkdir -p /home/node/app
 # Working directory
 WORKDIR /home/node/app
 
 RUN apk add --no-cache git
 
 # Copy source
-COPY . /home/node/app/
-
-ENV NODE_ENV=production
+COPY docker-entrypoint.sh /home/node/app/docker-entrypoint.sh
 
 # Start server
-CMD ["sh","start.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
