@@ -7,5 +7,10 @@ WORKDIR /home/node/app
 
 RUN apk add --no-cache git
 
+# Copy source
+COPY . /home/node/app/
 
-CMD["sh","start.sh"]
+ENV NODE_ENV=production
+
+# Start server
+CMD ["sh","start.sh"]
