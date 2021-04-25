@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../cursos/curso_moleculer/microservice0/aula7/.idea/aula7.iml" filepath="$PROJECT_DIR$/../../cursos/curso_moleculer/microservice0/aula7/.idea/aula7.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservice-nano.iml" filepath="$PROJECT_DIR$/.idea/microservice-nano.iml" />
     </modules>
   </component>
