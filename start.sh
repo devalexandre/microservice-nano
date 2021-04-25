@@ -1,10 +1,9 @@
 #!/bin/bash
 
-service="${SERVICE}.js"
 
 if [ $NODE_ENV = "production" ]
 then
-  node $service
+  node "${SERVICE}.js"
 else
-   npx nodemon $service
+   npx nodemon "${SERVICE}.js"
 fi
