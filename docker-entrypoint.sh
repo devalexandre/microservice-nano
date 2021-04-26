@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sleep 20
 if [ $NODE_ENV = "production" ]
 then
   echo " rodando em ${NODE_ENV} service ${SERVICE}"
